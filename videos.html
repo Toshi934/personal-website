@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos | Toshiaki Komura</title>
+    <meta name="description"
+        content="Educational videos by Toshiaki Komura on causal inference, meta-learners, and heterogeneous treatment effects.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Elements -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Toshiaki Komura</a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="index.html#projects" class="nav-link">Ongoing Projects</a></li>
+                <li class="nav-item"><a href="index.html#teaching" class="nav-link">Teaching</a></li>
+                <li class="nav-item"><a href="publications.html" class="nav-link">Publications</a></li>
+                <li class="nav-item"><a href="videos.html" class="nav-link">Videos</a></li>
+                <li class="nav-item"><a href="media.html" class="nav-link">Media</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header section-scroll">
+            <div class="container">
+                <h1 class="section-title fade-in">Videos</h1>
+            </div>
+        </section>
+
+        <!-- Video Gallery -->
+        <section class="section-scroll">
+            <div class="container">
+                <div class="video-gallery">
+                    <!-- Video 1 -->
+                    <div class="video-card glass-card fade-in-up" style="--delay: 0.1s">
+                        <div class="video-wrapper">
+                            <video controls preload="metadata" poster="">
+                                <source src="videos/hte_meta_learner.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="video-info">
+                            <h3>Heterogeneous Treatment Effects & Meta-Learner Frameworks</h3>
+                            <p class="video-description">
+                                A walkthrough of meta-learner frameworks for estimating heterogeneous treatment
+                                effects (HTE). The video introduces six meta-learner algorithms: S-Learner, T-Learner,
+                                X-Learner, DR-Learner, R-Learner, and Bayesian Causal Forest, illustrating the
+                                convergence process of each algorithm.
+                            </p>
+                            <div class="video-tags">
+                                <span class="tag">Causal Inference</span>
+                                <span class="tag">Machine Learning</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coming Soon -->
+        <section class="section-scroll">
+            <div class="container" style="text-align: center; padding: 3rem 1rem 5rem;">
+                <div class="glass-card fade-in-up"
+                    style="--delay: 0.3s; padding: 2.5rem 2rem; max-width: 600px; margin: 0 auto;">
+                    <p style="font-size: 2rem; margin-bottom: 0.75rem;">🎬</p>
+                    <h3 style="margin-bottom: 0.5rem;">More Videos Coming Soon</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                        I'm currently working on new educational videos covering other advanced causal inference
+                        techniques. Stay tuned!
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Toshiaki Komura</h2>
+                    <p>PhD Student in Public Health</p>
+                </div>
+                <div class="footer-contact">
+                    <button type="button" class="social-link copy-email-btn" data-email="tkomura@g.harvard.edu"
+                        id="copy-email-btn-footer">
+                        Email
+                        <span class="copy-tooltip" id="copy-tooltip-footer">Copied!</span>
+                    </button>
+                    <a href="https://scholar.google.com/citations?user=W1CnPakAAAAJ&hl=en" class="social-link"
+                        target="_blank" rel="noopener noreferrer">Google Scholar</a>
+                    <a href="https://www.linkedin.com/in/toshiaki-komura-0060483b5/" class="social-link" target="_blank"
+                        rel="noopener noreferrer">LinkedIn</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Toshiaki Komura. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
