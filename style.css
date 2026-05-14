@@ -2,20 +2,20 @@
    Design System & Tokens
    ========================================= */
 :root {
-    /* Color Palette - Premium Dark Mode */
-    --bg-base: #0a0a0c;
-    --bg-surface: rgba(20, 20, 25, 0.4);
-    --bg-surface-hover: rgba(30, 30, 38, 0.6);
-    --border-glass: rgba(255, 255, 255, 0.08);
-    --border-glass-strong: rgba(255, 255, 255, 0.15);
+    /* Color Palette - Morphous Alpine Lake Dark */
+    --bg-base: #0d1b21;
+    --bg-surface: rgba(26, 42, 50, 0.4);
+    --bg-surface-hover: rgba(35, 56, 67, 0.6);
+    --border-glass: rgba(100, 160, 172, 0.12);
+    --border-glass-strong: rgba(100, 160, 172, 0.22);
 
-    --text-main: #f3f4f6;
-    --text-muted: #9ca3af;
-    --text-accent: #60a5fa;
-    --text-accent-secondary: #a78bfa;
+    --text-main: #eef3f5;
+    --text-muted: #7a9fa8;
+    --text-accent: #4ab5c0;
+    --text-accent-secondary: #8ec5ce;
 
-    --gradient-primary: linear-gradient(135deg, #3b82f6, #8b5cf6);
-    --gradient-glow: rgba(139, 92, 246, 0.5);
+    --gradient-primary: linear-gradient(135deg, #2e9fa8, #7ab8c4);
+    --gradient-glow: rgba(46, 159, 168, 0.4);
 
     /* Typography */
     --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -101,8 +101,8 @@ h4 {
 .shape-1 {
     width: 40vw;
     height: 40vw;
-    background: rgba(59, 130, 246, 0.15);
-    /* Blue */
+    background: rgba(74, 181, 192, 0.15);
+    /* Alpine Teal */
     top: -10%;
     left: -10%;
 }
@@ -110,8 +110,8 @@ h4 {
 .shape-2 {
     width: 50vw;
     height: 50vw;
-    background: rgba(139, 92, 246, 0.12);
-    /* Purple */
+    background: rgba(46, 159, 168, 0.12);
+    /* Lake Water */
     bottom: -20%;
     right: -10%;
     animation-delay: -5s;
@@ -120,7 +120,8 @@ h4 {
 .shape-3 {
     width: 30vw;
     height: 30vw;
-    background: rgba(167, 139, 250, 0.1);
+    background: rgba(142, 197, 206, 0.1);
+    /* Glacier Blue */
     top: 40%;
     left: 40%;
     animation-delay: -10s;
