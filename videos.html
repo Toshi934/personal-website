@@ -49,33 +49,189 @@
             </div>
         </section>
 
-        <!-- Video Gallery -->
+        <!-- HTE & Meta-Learner Series -->
         <section class="section-scroll">
             <div class="container">
-                <div class="video-gallery">
-                    <!-- Video 1 -->
-                    <div class="video-card glass-card fade-in-up" style="--delay: 0.1s">
-                        <div class="video-wrapper">
-                            <video controls preload="metadata" poster="videos/hte_meta_learner_thumbnail.jpg">
-                                <source src="videos/hte_meta_learner.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                        <div class="video-info">
-                            <h3>Heterogeneous Treatment Effects & Meta-Learner Frameworks</h3>
-                            <p class="video-description">
-                                A walkthrough of meta-learner frameworks for estimating heterogeneous treatment
-                                effects (HTE). The video introduces six meta-learner algorithms: S-Learner, T-Learner,
-                                X-Learner, DR-Learner, R-Learner, and Bayesian Causal Forest, illustrating the
-                                convergence process of each algorithm.
-                            </p>
+
+                <!-- Series header -->
+                <div class="video-series-header fade-in-up" style="--delay: 0.05s">
+                    <h2 class="video-series-title">HTE &amp; Meta-Learner Series</h2>
+                    <p class="video-series-desc">
+                        A seven-part series on estimating heterogeneous treatment effects using meta-learner frameworks.
+                        Each video covers one algorithm — from the intuition behind the estimator to its step-by-step
+                        computation.
+                    </p>
+                </div>
+
+                <!-- Part 1: Introduction (featured, full-width) -->
+                <div class="video-card glass-card fade-in-up" style="--delay: 0.1s">
+                    <div class="video-wrapper">
+                        <video controls preload="metadata">
+                            <source src="videos/hte_intro.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta-row">
+                            <span class="video-series-badge">Part 1 of 7</span>
                             <div class="video-tags">
                                 <span class="tag">Causal Inference</span>
                                 <span class="tag">Machine Learning</span>
                             </div>
                         </div>
+                        <h3>Introduction to Heterogeneous Treatment Effects</h3>
+                        <p class="video-description">
+                            Introduces the concept of heterogeneous treatment effects and explains why individual-level
+                            causal estimates matter beyond the average treatment effect. Covers the CATE estimand and
+                            motivates the meta-learner framework.
+                        </p>
                     </div>
                 </div>
+
+                <!-- Parts 2–7: Meta-Learner grid -->
+                <div class="video-grid">
+
+                    <!-- S-Learner -->
+                    <div class="video-card video-card--compact glass-card fade-in-up" style="--delay: 0.15s">
+                        <div class="video-wrapper">
+                            <video controls preload="metadata">
+                                <source src="videos/s_learner.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="video-info">
+                            <div class="video-meta-row">
+                                <span class="video-series-badge">Part 2 of 7</span>
+                                <div class="video-tags">
+                                    <span class="tag">S-Learner</span>
+                                </div>
+                            </div>
+                            <h3>S-Learner</h3>
+                            <p class="video-description">
+                                Estimates CATE using a single outcome model that includes treatment as a covariate,
+                                then imputes counterfactuals by toggling the treatment indicator.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- T-Learner -->
+                    <div class="video-card video-card--compact glass-card fade-in-up" style="--delay: 0.2s">
+                        <div class="video-wrapper">
+                            <video controls preload="metadata">
+                                <source src="videos/t_learner.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="video-info">
+                            <div class="video-meta-row">
+                                <span class="video-series-badge">Part 3 of 7</span>
+                                <div class="video-tags">
+                                    <span class="tag">T-Learner</span>
+                                </div>
+                            </div>
+                            <h3>T-Learner</h3>
+                            <p class="video-description">
+                                Fits separate outcome models for the treated and untreated groups, then subtracts
+                                predicted outcomes to estimate individual treatment effects.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- X-Learner -->
+                    <div class="video-card video-card--compact glass-card fade-in-up" style="--delay: 0.25s">
+                        <div class="video-wrapper">
+                            <video controls preload="metadata">
+                                <source src="videos/x_learner.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="video-info">
+                            <div class="video-meta-row">
+                                <span class="video-series-badge">Part 4 of 7</span>
+                                <div class="video-tags">
+                                    <span class="tag">X-Learner</span>
+                                </div>
+                            </div>
+                            <h3>X-Learner</h3>
+                            <p class="video-description">
+                                Extends the T-Learner with a cross-fitting step that uses imputed treatment effects
+                                from each group to improve estimation in imbalanced samples.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- DR-Learner -->
+                    <div class="video-card video-card--compact glass-card fade-in-up" style="--delay: 0.3s">
+                        <div class="video-wrapper">
+                            <video controls preload="metadata">
+                                <source src="videos/dr_learner.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="video-info">
+                            <div class="video-meta-row">
+                                <span class="video-series-badge">Part 5 of 7</span>
+                                <div class="video-tags">
+                                    <span class="tag">DR-Learner</span>
+                                </div>
+                            </div>
+                            <h3>DR-Learner</h3>
+                            <p class="video-description">
+                                Constructs doubly-robust pseudo-outcomes combining outcome model predictions and
+                                inverse probability weighting, then regresses these on covariates for efficient
+                                CATE estimation.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- R-Learner -->
+                    <div class="video-card video-card--compact glass-card fade-in-up" style="--delay: 0.35s">
+                        <div class="video-wrapper">
+                            <video controls preload="metadata">
+                                <source src="videos/r_learner.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="video-info">
+                            <div class="video-meta-row">
+                                <span class="video-series-badge">Part 6 of 7</span>
+                                <div class="video-tags">
+                                    <span class="tag">R-Learner</span>
+                                </div>
+                            </div>
+                            <h3>R-Learner</h3>
+                            <p class="video-description">
+                                Applies Robinson's partial linear decomposition to residualize both outcome and
+                                treatment, then estimates CATE from residual-on-residual regression with sample
+                                weights.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- BCF -->
+                    <div class="video-card video-card--compact glass-card fade-in-up" style="--delay: 0.4s">
+                        <div class="video-wrapper">
+                            <video controls preload="metadata">
+                                <source src="videos/bcf_learner.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="video-info">
+                            <div class="video-meta-row">
+                                <span class="video-series-badge">Part 7 of 7</span>
+                                <div class="video-tags">
+                                    <span class="tag">BCF</span>
+                                </div>
+                            </div>
+                            <h3>Bayesian Causal Forest</h3>
+                            <p class="video-description">
+                                Uses two separate BART ensembles — one for the prognostic function and one for the
+                                treatment effect — with strong regularization priors that shrink toward zero.
+                            </p>
+                        </div>
+                    </div>
+
+                </div><!-- .video-grid -->
             </div>
         </section>
 

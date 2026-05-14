@@ -774,6 +774,7 @@ section {
 
 .video-card {
     overflow: hidden;
+    margin-bottom: var(--space-lg);
 }
 
 .video-wrapper {
@@ -814,6 +815,91 @@ section {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+}
+
+/* Series header */
+.video-series-header {
+    margin-bottom: var(--space-lg);
+}
+
+.video-series-title {
+    font-size: 1.6rem;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 0.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.video-series-title::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 1.5rem;
+    border-radius: 2px;
+    background: var(--gradient-primary);
+    flex-shrink: 0;
+}
+
+.video-series-desc {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    max-width: 780px;
+    padding-left: calc(4px + 0.75rem);
+}
+
+/* Part badge */
+.video-meta-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.6rem;
+}
+
+.video-series-badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-accent-secondary);
+    background: rgba(167, 139, 250, 0.1);
+    border: 1px solid rgba(167, 139, 250, 0.2);
+    padding: 0.2rem 0.7rem;
+    border-radius: 20px;
+}
+
+/* 2-column grid for meta-learner cards */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.video-card--compact {
+    margin-bottom: 0;
+}
+
+.video-card--compact .video-info {
+    padding: 1rem 1.25rem 1.25rem;
+}
+
+.video-card--compact .video-info h3 {
+    font-size: 1.15rem;
+}
+
+.video-card--compact .video-description {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 0.75rem;
 }
 
 /* =========================================
@@ -1062,6 +1148,15 @@ button.social-link {
 
     .media-arrow {
         display: none;
+    }
+
+    /* --- Video Grid --- */
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .video-series-title {
+        font-size: 1.3rem;
     }
 
     /* --- Publications --- */
