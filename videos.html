@@ -58,7 +58,7 @@
                     <h2 class="video-series-title">HTE &amp; Meta-Learner Series</h2>
                     <p class="video-series-desc">
                         A seven-part series on estimating heterogeneous treatment effects using meta-learner frameworks.
-                        Each video covers one algorithm — from the intuition behind the estimator to its step-by-step
+                        Each video covers one algorithm from the intuition behind the estimator to its step-by-step
                         computation.
                     </p>
                 </div>
@@ -102,15 +102,8 @@
                         <div class="video-info">
                             <div class="video-meta-row">
                                 <span class="video-series-badge">Part 2 of 7</span>
-                                <div class="video-tags">
-                                    <span class="tag">S-Learner</span>
-                                </div>
                             </div>
                             <h3>S-Learner</h3>
-                            <p class="video-description">
-                                Estimates CATE using a single outcome model that includes treatment as a covariate,
-                                then imputes counterfactuals by toggling the treatment indicator.
-                            </p>
                         </div>
                     </div>
 
@@ -126,14 +119,9 @@
                             <div class="video-meta-row">
                                 <span class="video-series-badge">Part 3 of 7</span>
                                 <div class="video-tags">
-                                    <span class="tag">T-Learner</span>
                                 </div>
                             </div>
                             <h3>T-Learner</h3>
-                            <p class="video-description">
-                                Fits separate outcome models for the treated and untreated groups, then subtracts
-                                predicted outcomes to estimate individual treatment effects.
-                            </p>
                         </div>
                     </div>
 
@@ -149,14 +137,9 @@
                             <div class="video-meta-row">
                                 <span class="video-series-badge">Part 4 of 7</span>
                                 <div class="video-tags">
-                                    <span class="tag">X-Learner</span>
                                 </div>
                             </div>
                             <h3>X-Learner</h3>
-                            <p class="video-description">
-                                Extends the T-Learner with a cross-fitting step that uses imputed treatment effects
-                                from each group to improve estimation in imbalanced samples.
-                            </p>
                         </div>
                     </div>
 
@@ -172,15 +155,9 @@
                             <div class="video-meta-row">
                                 <span class="video-series-badge">Part 5 of 7</span>
                                 <div class="video-tags">
-                                    <span class="tag">DR-Learner</span>
                                 </div>
                             </div>
                             <h3>DR-Learner</h3>
-                            <p class="video-description">
-                                Constructs doubly-robust pseudo-outcomes combining outcome model predictions and
-                                inverse probability weighting, then regresses these on covariates for efficient
-                                CATE estimation.
-                            </p>
                         </div>
                     </div>
 
@@ -196,15 +173,9 @@
                             <div class="video-meta-row">
                                 <span class="video-series-badge">Part 6 of 7</span>
                                 <div class="video-tags">
-                                    <span class="tag">R-Learner</span>
                                 </div>
                             </div>
                             <h3>R-Learner</h3>
-                            <p class="video-description">
-                                Applies Robinson's partial linear decomposition to residualize both outcome and
-                                treatment, then estimates CATE from residual-on-residual regression with sample
-                                weights.
-                            </p>
                         </div>
                     </div>
 
@@ -220,18 +191,51 @@
                             <div class="video-meta-row">
                                 <span class="video-series-badge">Part 7 of 7</span>
                                 <div class="video-tags">
-                                    <span class="tag">BCF</span>
                                 </div>
                             </div>
                             <h3>Bayesian Causal Forest</h3>
-                            <p class="video-description">
-                                Uses two separate BART ensembles — one for the prognostic function and one for the
-                                treatment effect — with strong regularization priors that shrink toward zero.
-                            </p>
                         </div>
                     </div>
 
                 </div><!-- .video-grid -->
+            </div>
+        </section>
+
+        <!-- Practical Tips -->
+        <section class="section-scroll">
+            <div class="container">
+
+                <!-- Series header -->
+                <div class="video-series-header fade-in-up" style="--delay: 0.05s">
+                    <h2 class="video-series-title">Practical Tips Series</h2>
+                    <p class="video-series-desc">
+                        Videos on practical issues in methodology.
+                    </p>
+                </div>
+
+                <!-- Table 2 Fallacy -->
+                <div class="video-card glass-card fade-in-up" style="--delay: 0.1s">
+                    <div class="video-wrapper">
+                        <video controls preload="metadata" poster="videos/table2_fallacy_thumbnail.jpg">
+                            <source src="videos/table2_fallacy.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta-row">
+                            <div class="video-tags">
+                                <span class="tag">Causal Inference</span>
+                            </div>
+                        </div>
+                        <h3>The Table 2 Fallacy</h3>
+                        <p class="video-description">
+                            Table 2 typically displays coefficients for treatment variables and covaraites.
+                            However, coefficients of covariates should not be interpreted as their causal effects.
+                            This video explains why covariate coefficients cannot be read as causal effects.
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </section>
 
